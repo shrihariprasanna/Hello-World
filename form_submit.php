@@ -11,8 +11,8 @@
 		mysqli_query($connection,$sql);
 		$user_id=mysqli_insert_id($connection);
 		for($i=0;$i<count($lang);$i++){
-			$qry="insert into form_lang values('','$user_id','$lang[$i]')";
-			mysqli_query($connection,$qry);
+			 $qry="insert into form_lang values('','$user_id','$lang[$i]')";
+			 mysqli_query($connection,$qry);
 		}
 		header("Location:index.php?mesg=success");
 	}
